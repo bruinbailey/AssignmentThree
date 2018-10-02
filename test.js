@@ -18,7 +18,7 @@ MongoClient.connect(url, options, function(err, client) {
 	var db = client.db(dbName);
 
 	var user = new Users(db, {
-			uid: 01189998819991197253,
+			uid: '01189998819991197253',
 			name: 'foo bar',
 			enrollments: ['P422']
 		});
