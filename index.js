@@ -29,6 +29,7 @@ connectToMongo('mongodb://localhost:27017', 'test', function(err, client) {
 		console.log(err);
 		return;
 	}
+	mongoose.connect('mongodb://127.0.0.1/test');
 	app.locals.db = client;
 	app.listen(8080, function() {
 		console.log('Listening on 8080');
